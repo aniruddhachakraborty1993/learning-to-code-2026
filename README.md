@@ -1,6 +1,6 @@
 # learning-to-code-2026
 My 2026 Software Development Journey Starting from absolute scratch to become an industry-ready freelance developer.
-# 🚀 30 Days of Web Development & AI Integration (2026)
+# 🚀 100 Days of Web Development & AI Integration (2026)
 
 Welcome to my journey! I am starting from absolute scratch to become an industry-ready freelance developer. My focus is on mastering system architecture, full-stack technologies, and AI-assisted workflows.
 
