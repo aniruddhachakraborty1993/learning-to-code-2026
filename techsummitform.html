@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Summit Form</title>
+</head>
+<body>
+<header>TechVanguard Annual Summit 2026</header>
+<p>Welcome to the TechVanguard Annual Summit 2026! We are excited to have you join us. Please fill out the form below to secure your spot; registration takes less than two minutes.</p>
+<main>
+    <section>
+         <form>
+        <fieldset>
+            <legend>Attendee Identity Details</legend>
+            <label for="full-name">Full Name(Required):</label>
+            <input id="full-name" type="text" name="name" required placeholder="e.g, Paul Hardy">
+            <label for="email">Business Email(required):</label>
+            <input id="email" type="email" placeholder="abc@mail.com" name="email" required>
+            <label for="pnumber">Passes Required:</label>
+            <input id="pnumber" type="number" placeholder="max 5" name="number" max="5" min="1">
+
+        </fieldset>
+        <fieldset>
+            <legend>Pass Options and Tracks</legend>
+            <label for="dropdown">Pass Type</label>
+            <select id="dropdown">
+                <option value=""disabled selected>Select Pass Type</option>
+                <option value="vip-all-access">VIP All-Access</option>
+                <option value="general-admission">General Admission</option>
+                <option value="virtual-streaming">Virtual Streaming</option>
+            </select>
+            <p>Primary Learning Track</p>
+            <input type="radio" id="ai-development" name="primary-learning-track" value="ai-development">
+            <label for="ai-development">AI Development</label>
+            <input type="radio" id="ux-ui-design" name="primary-learning-track" value="ux-ui-design">
+            <label for="ux-ui-design">UX UI Design</label>
+            <input type="radio" id="product-strategy" name="primary-learning-track" value="product-strategy">
+            <label for="product-strategy">Product Strategy</label>
+            <p>Select Extra Evening Events</p>
+            <lable for="networking-dinner">Networking Dinner</lable>
+            <input type="checkbox" id="networking-dinner" value="networking-dinner" name="extra-evening-events">
+            <label for="after-hour-mixers">After Hour Mixers</label>
+            <input type="checkbox" id="after-hour-mixers" value="after-hour-mixers" name="extra-evening-events">
+            <label for="speaker-round-table">Speaker Round-Table</label>
+            <input type="checkbox" id="speaker-round-table" value="speaker-round-table" name="extra-evening-events">
+        </fieldset>
+         <fieldset>
+            <legend>Accommodations & Submission</legend>
+
+            
+                <label for="accommodations">Dietary or Accessibility Requests:</label><br>
+                <textarea id="accommodations" name="user_requests" rows="5" cols="50" placeholder="Please list any dietary restrictions or accessibility needs here..."></textarea>
+            
+                <button type="submit">Submit Registration</button>
+            
+        </fieldset>
+    </form>
+    </section>
+   <section>
+    <table>
+        <thead>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Access Level</th>
+                <th>Early Bird Price</th>
+                <th>Standard Price</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>VIP All-Access</td>
+                <td>Full Access + Workshops</td>
+                <td>$599</td>
+                <td>$799</td>
+            </tr>
+            <tr>
+                <td>General Admission</td>
+                <td>Main Stage Only</td>
+                <td>$299</td>
+                <td>$399</td>
+            </tr>
+            
+            <!-- Crucial Formatting Requirement: Spans all 4 columns -->
+            <tr>
+                <td colspan="4" style="text-align: center; font-weight: bold;">--- Group Packages Available Upon Request ---</td>
+            </tr>
+
+            <tr>
+                <td>Virtual Streaming</td>
+                <td>Online Keynotes Only</td>
+                <td>$99</td>
+                <td>$149</td>
+            </tr>
+        </tbody>
+        
+        <!-- Dedicated semantic table footer wrapper -->
+        <tfoot>
+            <tr>
+                <!-- Merged layout horizontally across multiple columns -->
+                <td colspan="4">Note: Early bird pricing closes strictly on June 1st.</td>
+            </tr>
+        </tfoot>
+    </table>
+   </section>
+</main>
+</body>
+</html>

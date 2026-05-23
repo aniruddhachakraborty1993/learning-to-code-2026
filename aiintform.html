@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+    <h1>AI Integration Service Request</h1>
+</header>
+    <main>
+        <form method="post" target="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full-name">Name(Required):</label>
+                <input type="text" id="full-name" name="name" placeholder="e.g., Alex Smith" required>
+                <label for="email">Email address(required):</label>
+                <input type="email" id="email" name="email" placeholder="abc@mail.com" required>
+                <label for="url">Company Website:</label>
+                <input type="url" id="url" name="url">
+            </fieldset>
+            <fieldset>
+                <legend>System Specifications</legend>
+                <label for="aiengines">Target AI Engine</label>
+                <select name="aiengines" id="aiengines">
+                    <option value="Google Gemini Pro"> Google Gemini Pro</option>
+                    <option value="Anthropic Claude 3.5">Anthropic Claude 3.5</option>
+                    <option value="OpenAI GPT-4o">OpenAI GPT-4o</option>
+                    </select>
+                  <p>Current development stage:</p> 
+                  <input  id="idea-phase" type="radio" name="development-stage" value="idea-phase">
+                  <label for="idea-phase">Idea Phase</label>
+                  <input id="existing-app-needing-ai" type="radio" name="development-stage" value="existing-app-needing-ai">
+                  <label for="existing-app-needing-ai">Existing App Needing AI</label>
+                  <p>Or</p>
+                 <input id="legacy-database-migration" type="radio" name="development-stage" value="legacy-database-migration">
+                    <label for="legacy-database-migration">Legacy Database Migration</label>
+             </fieldset>
+             <fieldset>
+                <legend>Required Integrations (Select all that apply)</legend>
+                <input checked type="checkbox" id="customer-support-chatbot" name="choice" value="customer-support-chatbot">
+                <label for="customer-support-chatbot">Customer Support Chatbot</label>
+                <input type="checkbox" id="automated-data-entry" name="choice" value="automated-data-entry">
+                <label for="automated-data-entry">Automated Data Entry</label>
+                <input type="checkbox" id="ai-email-responder" name="choice" value="ai-email-responder">
+                <label for="ai-email-responder">AI Email Responder</label>
+                <input type="checkbox" id="custo-analytics-dashboard" name="choice" value="custo-analytics-dashboard">
+                <label for="custo-analytics-dashboard">Custom Analytics Dashboard</label>
+
+             </fieldset>
+             <fieldset>
+                <legend>Project Scope & Budget</legend>
+                <label for="budget"> Estimated budget in INR</label>
+                <input type="number" id="budget" name="budget" min="10000">
+                <label for="comments">Describe  custom workflow problems</label>
+                <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+             </fieldset>
+             <button type="submit">Request AI Consultation</button>
+        </form>
+    </main>
+
+</body>
+</html>
